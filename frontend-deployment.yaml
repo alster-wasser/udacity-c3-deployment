@@ -23,5 +23,8 @@ spec:
         ports:
         - containerPort: 8100
         resources: {}
+        env:
+        - name: API_HOST
+          value: reverseproxy:8080 
       restartPolicy: Always
 status: {}
