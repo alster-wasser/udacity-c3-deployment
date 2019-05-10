@@ -66,9 +66,10 @@ spec:
         volumeMounts:
         - mountPath: /root/.aws
           name: backend-feed-claim0
+          readOnly: true
       restartPolicy: Always
       volumes:
       - name: backend-feed-claim0
-        persistentVolumeClaim:
-          claimName: backend-feed-claim0
+        configMap: 
+          name: aws-config
 status: {}
