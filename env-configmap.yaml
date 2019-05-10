@@ -8,5 +8,5 @@ data:
   POSTGRESS_DB: ___INSERT_POSTGRESS_DB___
   POSTGRESS_HOST: ___INSERT_POSTGRESS_HOST___
 metadata:
-  name: env-configmap
+  name: env-config
   
